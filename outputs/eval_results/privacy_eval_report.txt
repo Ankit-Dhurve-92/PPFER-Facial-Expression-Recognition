@@ -1,0 +1,14 @@
+====================================================================================
+PPFER PRIVACY PROTECTION EVALUATION (IDENTITY LEAKAGE TEST)
+Identity Controller: /home/ankit.dhurve/ppfer-main (2)/ppfer-main/pretrained_weights/c_hpr_identity.pth
+Validation Clips   : 1630 (91 CREMA-D Actors)
+====================================================================================
+Dataset Stage                               Clip Top-1  Clip Top-5  Frame Top-1
+------------------------------------------------------------------------------------
+Raw Face Clips (Unprotected)                     1.10%       6.50%        1.10%
+Stage-1 Output (s2_clips - Anonymized)           1.10%       7.55%        1.10%
+Stage-2 Output (s3_clips - Final Restored)       1.10%       6.50%        1.10%
+====================================================================================
+Identity Accuracy Drop after Stage 1 (s2_clips): -0.00% (Higher drop = Better privacy)
+Identity Accuracy Drop after Stage 2 (s3_clips): -0.00% (Final system privacy gain)
+====================================================================================

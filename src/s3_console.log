@@ -1,0 +1,90 @@
+attention mode is flash
+Downloading: "https://download.pytorch.org/models/r3d_18-b3b3357e.pth" to /home/ankit.dhurve/.cache/torch/hub/checkpoints/r3d_18-b3b3357e.pth
+  0%|          | 0.00/127M [00:00<?, ?B/s]  0%|          | 384k/127M [00:00<00:34, 3.91MB/s]  4%|▍         | 5.50M/127M [00:00<00:03, 33.0MB/s]  8%|▊         | 10.8M/127M [00:00<00:02, 42.9MB/s] 14%|█▍        | 17.6M/127M [00:00<00:02, 54.3MB/s] 22%|██▏       | 28.6M/127M [00:00<00:01, 76.0MB/s] 29%|██▊       | 36.4M/127M [00:00<00:01, 77.4MB/s] 35%|███▌      | 44.6M/127M [00:00<00:01, 80.1MB/s] 41%|████      | 52.4M/127M [00:00<00:01, 78.3MB/s] 49%|████▉     | 62.8M/127M [00:00<00:00, 81.9MB/s] 57%|█████▋    | 72.0M/127M [00:01<00:00, 86.2MB/s] 63%|██████▎   | 80.5M/127M [00:01<00:00, 86.8MB/s] 71%|███████   | 90.0M/127M [00:01<00:00, 90.4MB/s] 78%|███████▊  | 98.8M/127M [00:01<00:00, 89.7MB/s] 85%|████████▌ | 108M/127M [00:01<00:00, 93.2MB/s]  92%|█████████▏| 118M/127M [00:01<00:00, 91.3MB/s]100%|██████████| 127M/127M [00:01<00:00, 81.2MB/s]
+Stage 3 Ready | Train clips: 5771 | Val clips: 1630
+S3 Epoch 1/15 | Step 0/360 | Loss: 1.8834 | Running Acc: 18.75%
+S3 Epoch 1/15 | Step 100/360 | Loss: 0.7676 | Running Acc: 50.93%
+S3 Epoch 1/15 | Step 200/360 | Loss: 0.7115 | Running Acc: 56.59%
+S3 Epoch 1/15 | Step 300/360 | Loss: 1.2509 | Running Acc: 59.47%
+S3 Epoch 1/15 SUMMARY | Train Loss: 1.1135 (Acc: 60.61%) | Val Loss: 0.9659 (Acc: 67.73%)
+--> New Best S3 Model Saved! Val Acc: 67.73%
+S3 Epoch 2/15 | Step 0/360 | Loss: 0.6220 | Running Acc: 87.50%
+S3 Epoch 2/15 | Step 100/360 | Loss: 0.8365 | Running Acc: 72.71%
+S3 Epoch 2/15 | Step 200/360 | Loss: 0.6839 | Running Acc: 72.11%
+S3 Epoch 2/15 | Step 300/360 | Loss: 0.6990 | Running Acc: 72.74%
+S3 Epoch 2/15 SUMMARY | Train Loss: 0.8637 (Acc: 72.83%) | Val Loss: 0.9451 (Acc: 68.59%)
+--> New Best S3 Model Saved! Val Acc: 68.59%
+S3 Epoch 3/15 | Step 0/360 | Loss: 0.6961 | Running Acc: 75.00%
+S3 Epoch 3/15 | Step 100/360 | Loss: 0.6027 | Running Acc: 80.69%
+S3 Epoch 3/15 | Step 200/360 | Loss: 0.6520 | Running Acc: 79.57%
+S3 Epoch 3/15 | Step 300/360 | Loss: 0.4838 | Running Acc: 79.36%
+S3 Epoch 3/15 SUMMARY | Train Loss: 0.7225 (Acc: 79.27%) | Val Loss: 0.8893 (Acc: 72.52%)
+--> New Best S3 Model Saved! Val Acc: 72.52%
+S3 Epoch 4/15 | Step 0/360 | Loss: 0.6991 | Running Acc: 81.25%
+S3 Epoch 4/15 | Step 100/360 | Loss: 0.5777 | Running Acc: 84.84%
+S3 Epoch 4/15 | Step 200/360 | Loss: 0.6665 | Running Acc: 84.67%
+S3 Epoch 4/15 | Step 300/360 | Loss: 0.7099 | Running Acc: 84.76%
+S3 Epoch 4/15 SUMMARY | Train Loss: 0.6205 (Acc: 84.48%) | Val Loss: 0.8883 (Acc: 73.01%)
+--> New Best S3 Model Saved! Val Acc: 73.01%
+S3 Epoch 5/15 | Step 0/360 | Loss: 0.4332 | Running Acc: 93.75%
+S3 Epoch 5/15 | Step 100/360 | Loss: 0.5392 | Running Acc: 90.66%
+S3 Epoch 5/15 | Step 200/360 | Loss: 0.7939 | Running Acc: 90.36%
+S3 Epoch 5/15 | Step 300/360 | Loss: 0.4454 | Running Acc: 90.22%
+S3 Epoch 5/15 SUMMARY | Train Loss: 0.4955 (Acc: 90.24%) | Val Loss: 0.8195 (Acc: 77.42%)
+--> New Best S3 Model Saved! Val Acc: 77.42%
+S3 Epoch 6/15 | Step 0/360 | Loss: 0.3311 | Running Acc: 100.00%
+S3 Epoch 6/15 | Step 100/360 | Loss: 0.3090 | Running Acc: 95.17%
+S3 Epoch 6/15 | Step 200/360 | Loss: 0.4582 | Running Acc: 94.71%
+S3 Epoch 6/15 | Step 300/360 | Loss: 0.3816 | Running Acc: 94.62%
+S3 Epoch 6/15 SUMMARY | Train Loss: 0.4130 (Acc: 94.25%) | Val Loss: 0.9916 (Acc: 71.47%)
+S3 Epoch 7/15 | Step 0/360 | Loss: 0.3109 | Running Acc: 100.00%
+S3 Epoch 7/15 | Step 100/360 | Loss: 0.2900 | Running Acc: 97.03%
+S3 Epoch 7/15 | Step 200/360 | Loss: 0.2744 | Running Acc: 97.36%
+S3 Epoch 7/15 | Step 300/360 | Loss: 0.3916 | Running Acc: 97.47%
+S3 Epoch 7/15 SUMMARY | Train Loss: 0.3427 (Acc: 97.38%) | Val Loss: 0.8887 (Acc: 75.52%)
+S3 Epoch 8/15 | Step 0/360 | Loss: 0.3097 | Running Acc: 100.00%
+S3 Epoch 8/15 | Step 100/360 | Loss: 0.2665 | Running Acc: 99.38%
+S3 Epoch 8/15 | Step 200/360 | Loss: 0.2784 | Running Acc: 99.13%
+S3 Epoch 8/15 | Step 300/360 | Loss: 0.2836 | Running Acc: 98.96%
+S3 Epoch 8/15 SUMMARY | Train Loss: 0.3082 (Acc: 98.91%) | Val Loss: 0.9274 (Acc: 73.50%)
+S3 Epoch 9/15 | Step 0/360 | Loss: 0.2873 | Running Acc: 100.00%
+S3 Epoch 9/15 | Step 100/360 | Loss: 0.2888 | Running Acc: 99.63%
+S3 Epoch 9/15 | Step 200/360 | Loss: 0.2799 | Running Acc: 99.53%
+S3 Epoch 9/15 | Step 300/360 | Loss: 0.3652 | Running Acc: 99.56%
+S3 Epoch 9/15 SUMMARY | Train Loss: 0.2880 (Acc: 99.58%) | Val Loss: 0.8024 (Acc: 78.65%)
+--> New Best S3 Model Saved! Val Acc: 78.65%
+S3 Epoch 10/15 | Step 0/360 | Loss: 0.2724 | Running Acc: 100.00%
+S3 Epoch 10/15 | Step 100/360 | Loss: 0.2641 | Running Acc: 99.94%
+S3 Epoch 10/15 | Step 200/360 | Loss: 0.3005 | Running Acc: 99.72%
+S3 Epoch 10/15 | Step 300/360 | Loss: 0.2932 | Running Acc: 99.65%
+S3 Epoch 10/15 SUMMARY | Train Loss: 0.2783 (Acc: 99.67%) | Val Loss: 0.7902 (Acc: 78.53%)
+S3 Epoch 11/15 | Step 0/360 | Loss: 0.2634 | Running Acc: 100.00%
+S3 Epoch 11/15 | Step 100/360 | Loss: 0.2707 | Running Acc: 99.88%
+S3 Epoch 11/15 | Step 200/360 | Loss: 0.2798 | Running Acc: 99.94%
+S3 Epoch 11/15 | Step 300/360 | Loss: 0.2683 | Running Acc: 99.92%
+S3 Epoch 11/15 SUMMARY | Train Loss: 0.2672 (Acc: 99.93%) | Val Loss: 0.7842 (Acc: 79.02%)
+--> New Best S3 Model Saved! Val Acc: 79.02%
+S3 Epoch 12/15 | Step 0/360 | Loss: 0.2513 | Running Acc: 100.00%
+S3 Epoch 12/15 | Step 100/360 | Loss: 0.2601 | Running Acc: 100.00%
+S3 Epoch 12/15 | Step 200/360 | Loss: 0.2610 | Running Acc: 99.97%
+S3 Epoch 12/15 | Step 300/360 | Loss: 0.3056 | Running Acc: 99.98%
+S3 Epoch 12/15 SUMMARY | Train Loss: 0.2644 (Acc: 99.98%) | Val Loss: 0.7791 (Acc: 78.65%)
+S3 Epoch 13/15 | Step 0/360 | Loss: 0.2580 | Running Acc: 100.00%
+S3 Epoch 13/15 | Step 100/360 | Loss: 0.2564 | Running Acc: 100.00%
+S3 Epoch 13/15 | Step 200/360 | Loss: 0.2629 | Running Acc: 99.94%
+S3 Epoch 13/15 | Step 300/360 | Loss: 0.2530 | Running Acc: 99.96%
+S3 Epoch 13/15 SUMMARY | Train Loss: 0.2601 (Acc: 99.97%) | Val Loss: 0.7823 (Acc: 78.90%)
+S3 Epoch 14/15 | Step 0/360 | Loss: 0.2568 | Running Acc: 100.00%
+S3 Epoch 14/15 | Step 100/360 | Loss: 0.2543 | Running Acc: 100.00%
+S3 Epoch 14/15 | Step 200/360 | Loss: 0.2626 | Running Acc: 100.00%
+S3 Epoch 14/15 | Step 300/360 | Loss: 0.2515 | Running Acc: 100.00%
+S3 Epoch 14/15 SUMMARY | Train Loss: 0.2591 (Acc: 100.00%) | Val Loss: 0.7829 (Acc: 79.08%)
+--> New Best S3 Model Saved! Val Acc: 79.08%
+S3 Epoch 15/15 | Step 0/360 | Loss: 0.2533 | Running Acc: 100.00%
+S3 Epoch 15/15 | Step 100/360 | Loss: 0.2609 | Running Acc: 100.00%
+S3 Epoch 15/15 | Step 200/360 | Loss: 0.2486 | Running Acc: 100.00%
+S3 Epoch 15/15 | Step 300/360 | Loss: 0.2502 | Running Acc: 100.00%
+S3 Epoch 15/15 SUMMARY | Train Loss: 0.2580 (Acc: 100.00%) | Val Loss: 0.7843 (Acc: 78.71%)
+
+Stage 3 Training 100% Completed! Best Validation Accuracy: 79.08%
+Saved at: /home/ankit.dhurve/ppfer-main (2)/ppfer-main/outputs/train-[2026-11-24]-[14:18]/s3_best_model.pth

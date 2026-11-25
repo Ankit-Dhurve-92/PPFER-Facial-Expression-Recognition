@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+*.pth
+*.pt
+*.ckpt
+*.h5
+*.zip
+datasets/
+pretrained_weights/
+outputs/pretrain-*/
+outputs/train-*/
+!outputs/eval_results/

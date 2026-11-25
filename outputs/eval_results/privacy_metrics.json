@@ -1,0 +1,27 @@
+{
+  "controller": "/home/ankit.dhurve/ppfer-main (2)/ppfer-main/pretrained_weights/c_hpr_identity.pth",
+  "stages": {
+    "Raw Face Clips (Unprotected)": {
+      "total_clips": 1630,
+      "clip_top1_acc": 1.1042944785276074,
+      "clip_top5_acc": 6.5030674846625764,
+      "frame_top1_acc": 1.1004601226993866
+    },
+    "Stage-1 Output (s2_clips - Anonymized)": {
+      "total_clips": 1630,
+      "clip_top1_acc": 1.1042944785276074,
+      "clip_top5_acc": 7.546012269938649,
+      "frame_top1_acc": 1.0966257668711656
+    },
+    "Stage-2 Output (s3_clips - Final Restored)": {
+      "total_clips": 1630,
+      "clip_top1_acc": 1.1042944785276074,
+      "clip_top5_acc": 6.5030674846625764,
+      "frame_top1_acc": 1.0966257668711656
+    }
+  },
+  "privacy_gain_clip_top1_drop": {
+    "after_stage1_s2_clips": 0.0,
+    "after_stage2_s3_clips": 0.0
+  }
+}

@@ -1,0 +1,101 @@
+{
+  "checkpoint": "/home/ankit.dhurve/ppfer-main (2)/ppfer-main/outputs/train-[2026-11-24]-[14:18]/s3_best_model.pth",
+  "total_clips": 1630,
+  "overall_accuracy": 79.0798,
+  "macro_f1": 79.1372,
+  "weighted_f1": 79.1389,
+  "per_class": {
+    "ANG": {
+      "support": 272,
+      "accuracy": 77.2059,
+      "precision": 79.8479,
+      "recall": 77.2059,
+      "f1_score": 78.5047
+    },
+    "DIS": {
+      "support": 272,
+      "accuracy": 90.8088,
+      "precision": 85.7639,
+      "recall": 90.8088,
+      "f1_score": 88.2143
+    },
+    "FEA": {
+      "support": 272,
+      "accuracy": 67.6471,
+      "precision": 76.0331,
+      "recall": 67.6471,
+      "f1_score": 71.5953
+    },
+    "HAP": {
+      "support": 272,
+      "accuracy": 90.8088,
+      "precision": 95.0,
+      "recall": 90.8088,
+      "f1_score": 92.8571
+    },
+    "NEU": {
+      "support": 270,
+      "accuracy": 78.5185,
+      "precision": 77.0909,
+      "recall": 78.5185,
+      "f1_score": 77.7982
+    },
+    "SAD": {
+      "support": 272,
+      "accuracy": 69.4853,
+      "precision": 62.5828,
+      "recall": 69.4853,
+      "f1_score": 65.8537
+    }
+  },
+  "confusion_matrix": [
+    [
+      210,
+      13,
+      10,
+      5,
+      13,
+      21
+    ],
+    [
+      4,
+      247,
+      5,
+      4,
+      2,
+      10
+    ],
+    [
+      25,
+      9,
+      184,
+      1,
+      10,
+      43
+    ],
+    [
+      3,
+      6,
+      7,
+      247,
+      5,
+      4
+    ],
+    [
+      12,
+      1,
+      8,
+      2,
+      212,
+      35
+    ],
+    [
+      9,
+      12,
+      28,
+      1,
+      33,
+      189
+    ]
+  ]
+}

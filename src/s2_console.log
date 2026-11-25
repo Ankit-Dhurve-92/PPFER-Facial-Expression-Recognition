@@ -1,0 +1,170 @@
+W1124 10:39:30.595000 2586707 torch/distributed/run.py:793] 
+W1124 10:39:30.595000 2586707 torch/distributed/run.py:793] *****************************************
+W1124 10:39:30.595000 2586707 torch/distributed/run.py:793] Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+W1124 10:39:30.595000 2586707 torch/distributed/run.py:793] *****************************************
+attention mode is flash
+attention mode is flash
+[W1124 10:39:33.706947105 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+[W1124 10:39:33.707489522 CUDAAllocatorConfig.h:28] Warning: expandable_segments not supported on this platform (function operator())
+Create autoencoder with scale_factor=0.18215
+Create autoencoder with scale_factor=0.18215
+making attention of type 'vanilla' with 512 in_channels
+Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+making attention of type 'vanilla' with 512 in_channels
+making attention of type 'vanilla' with 512 in_channels
+Working with z of shape (1, 4, 32, 32) = 4096 dimensions.
+making attention of type 'vanilla' with 512 in_channels
+/home/ankit.dhurve/ppfer-main (2)/ppfer-main/src/uvit/autoencoder.py:423: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m, u = self.load_state_dict(torch.load(pretrained_path, map_location='cpu'))
+/home/ankit.dhurve/ppfer-main (2)/ppfer-main/src/uvit/autoencoder.py:423: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  m, u = self.load_state_dict(torch.load(pretrained_path, map_location='cpu'))
+Resumed U-ViT weights from: /home/ankit.dhurve/ppfer-main (2)/ppfer-main/outputs/train-[2026-11-23]-[21:32]/s2_best_model.pth
+/home/ankit.dhurve/ppfer-main (2)/ppfer-main/src/models.py:111: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(ckpt_path, map_location='cpu')
+/home/ankit.dhurve/ppfer-main (2)/ppfer-main/src/models.py:111: FutureWarning: You are using `torch.load` with `weights_only=False` (the current default value), which uses the default pickle module implicitly. It is possible to construct malicious pickle data which will execute arbitrary code during unpickling (See https://github.com/pytorch/pytorch/blob/main/SECURITY.md#untrusted-models for more details). In a future release, the default value for `weights_only` will be flipped to `True`. This limits the functions that could be executed during unpickling. Arbitrary objects will no longer be allowed to be loaded via this mode unless they are explicitly allowlisted by the user via `torch.serialization.add_safe_globals`. We recommend you start setting `weights_only=True` for any use case where you don't have full control of the loaded file. Please open an issue on GitHub for any issues related to this experimental feature.
+  state = torch.load(ckpt_path, map_location='cpu')
+Dual-GPU DDP Active (2 GPUs) | Steps/Epoch per GPU: 2886
+/home/ankit.dhurve/ppfer-main (2)/ppfer-main/.venv/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:632: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+/home/ankit.dhurve/ppfer-main (2)/ppfer-main/.venv/lib/python3.11/site-packages/torch/_dynamo/eval_frame.py:632: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.5 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
+  return fn(*args, **kwargs)
+S2-DDP Epoch 1/1 | Step 0/2886 | Loss: 0.9074 (Avg: 0.9074 | Emo: 0.8760, Rec: 0.0209) | Emo Acc: 100.0%
+S2-DDP Epoch 1/1 | Step 25/2886 | Loss: 0.5520 (Avg: 1.1116 | Emo: 0.5151, Rec: 0.0246) | Emo Acc: 65.4%
+S2-DDP Epoch 1/1 | Step 50/2886 | Loss: 0.2783 (Avg: 1.0532 | Emo: 0.2482, Rec: 0.0201) | Emo Acc: 64.0%
+S2-DDP Epoch 1/1 | Step 75/2886 | Loss: 0.1227 (Avg: 0.9628 | Emo: 0.0928, Rec: 0.0200) | Emo Acc: 64.0%
+S2-DDP Epoch 1/1 | Step 100/2886 | Loss: 1.4648 (Avg: 1.1616 | Emo: 1.4395, Rec: 0.0169) | Emo Acc: 50.0%
+S2-DDP Epoch 1/1 | Step 125/2886 | Loss: 0.0359 (Avg: 1.1040 | Emo: 0.0045, Rec: 0.0210) | Emo Acc: 56.0%
+S2-DDP Epoch 1/1 | Step 150/2886 | Loss: 0.2723 (Avg: 0.7617 | Emo: 0.2434, Rec: 0.0193) | Emo Acc: 76.0%
+S2-DDP Epoch 1/1 | Step 175/2886 | Loss: 1.7763 (Avg: 0.8796 | Emo: 1.7441, Rec: 0.0215) | Emo Acc: 68.0%
+S2-DDP Epoch 1/1 | Step 200/2886 | Loss: 0.2020 (Avg: 0.9412 | Emo: 0.1711, Rec: 0.0206) | Emo Acc: 66.0%
+S2-DDP Epoch 1/1 | Step 225/2886 | Loss: 0.0342 (Avg: 0.9358 | Emo: 0.0032, Rec: 0.0206) | Emo Acc: 68.0%
+S2-DDP Epoch 1/1 | Step 250/2886 | Loss: 0.0396 (Avg: 0.8576 | Emo: 0.0002, Rec: 0.0263) | Emo Acc: 66.0%
+S2-DDP Epoch 1/1 | Step 275/2886 | Loss: 0.7768 (Avg: 0.8150 | Emo: 0.7505, Rec: 0.0175) | Emo Acc: 70.0%
+S2-DDP Epoch 1/1 | Step 300/2886 | Loss: 0.7515 (Avg: 0.9597 | Emo: 0.7207, Rec: 0.0206) | Emo Acc: 66.0%
+S2-DDP Epoch 1/1 | Step 325/2886 | Loss: 1.3551 (Avg: 0.8175 | Emo: 1.3223, Rec: 0.0219) | Emo Acc: 64.0%
+S2-DDP Epoch 1/1 | Step 350/2886 | Loss: 0.0613 (Avg: 0.8004 | Emo: 0.0307, Rec: 0.0204) | Emo Acc: 60.0%
+S2-DDP Epoch 1/1 | Step 375/2886 | Loss: 1.7953 (Avg: 1.0226 | Emo: 1.7686, Rec: 0.0178) | Emo Acc: 60.0%
+S2-DDP Epoch 1/1 | Step 400/2886 | Loss: 0.1338 (Avg: 1.0908 | Emo: 0.1029, Rec: 0.0206) | Emo Acc: 62.0%
+S2-DDP Epoch 1/1 | Step 425/2886 | Loss: 0.0478 (Avg: 1.0835 | Emo: 0.0146, Rec: 0.0221) | Emo Acc: 60.0%
+S2-DDP Epoch 1/1 | Step 450/2886 | Loss: 0.3930 (Avg: 0.8897 | Emo: 0.3618, Rec: 0.0208) | Emo Acc: 72.0%
+S2-DDP Epoch 1/1 | Step 475/2886 | Loss: 0.0393 (Avg: 0.6322 | Emo: 0.0050, Rec: 0.0229) | Emo Acc: 80.0%
+S2-DDP Epoch 1/1 | Step 500/2886 | Loss: 0.9179 (Avg: 1.0436 | Emo: 0.8896, Rec: 0.0188) | Emo Acc: 64.0%
+S2-DDP Epoch 1/1 | Step 525/2886 | Loss: 2.0049 (Avg: 1.2911 | Emo: 1.9766, Rec: 0.0189) | Emo Acc: 52.0%
+S2-DDP Epoch 1/1 | Step 550/2886 | Loss: 0.2025 (Avg: 0.9491 | Emo: 0.1792, Rec: 0.0155) | Emo Acc: 62.0%
+S2-DDP Epoch 1/1 | Step 575/2886 | Loss: 3.3261 (Avg: 0.8617 | Emo: 3.2891, Rec: 0.0247) | Emo Acc: 60.0%
+S2-DDP Epoch 1/1 | Step 600/2886 | Loss: 2.4733 (Avg: 0.8514 | Emo: 2.4414, Rec: 0.0213) | Emo Acc: 66.0%
+S2-DDP Epoch 1/1 | Step 625/2886 | Loss: 2.3909 (Avg: 0.9015 | Emo: 2.3594, Rec: 0.0210) | Emo Acc: 70.0%
+S2-DDP Epoch 1/1 | Step 650/2886 | Loss: 0.0689 (Avg: 1.0739 | Emo: 0.0354, Rec: 0.0223) | Emo Acc: 54.0%
+S2-DDP Epoch 1/1 | Step 675/2886 | Loss: 0.5378 (Avg: 1.0271 | Emo: 0.5132, Rec: 0.0164) | Emo Acc: 56.0%
+S2-DDP Epoch 1/1 | Step 700/2886 | Loss: 0.0515 (Avg: 0.9258 | Emo: 0.0187, Rec: 0.0219) | Emo Acc: 66.0%
+S2-DDP Epoch 1/1 | Step 725/2886 | Loss: 0.8742 (Avg: 0.9032 | Emo: 0.8413, Rec: 0.0220) | Emo Acc: 68.0%
+S2-DDP Epoch 1/1 | Step 750/2886 | Loss: 0.3995 (Avg: 1.0158 | Emo: 0.3665, Rec: 0.0220) | Emo Acc: 62.0%
+S2-DDP Epoch 1/1 | Step 775/2886 | Loss: 0.9155 (Avg: 1.1873 | Emo: 0.8872, Rec: 0.0189) | Emo Acc: 52.0%
+S2-DDP Epoch 1/1 | Step 800/2886 | Loss: 0.0359 (Avg: 1.1478 | Emo: 0.0052, Rec: 0.0205) | Emo Acc: 54.0%
+S2-DDP Epoch 1/1 | Step 825/2886 | Loss: 0.9209 (Avg: 0.9638 | Emo: 0.8950, Rec: 0.0173) | Emo Acc: 66.0%
+S2-DDP Epoch 1/1 | Step 850/2886 | Loss: 0.3627 (Avg: 0.6499 | Emo: 0.3406, Rec: 0.0147) | Emo Acc: 80.0%
+S2-DDP Epoch 1/1 | Step 875/2886 | Loss: 0.8171 (Avg: 0.5618 | Emo: 0.7891, Rec: 0.0187) | Emo Acc: 84.0%
+S2-DDP Epoch 1/1 | Step 900/2886 | Loss: 0.3498 (Avg: 0.7218 | Emo: 0.3213, Rec: 0.0190) | Emo Acc: 74.0%
+S2-DDP Epoch 1/1 | Step 925/2886 | Loss: 2.9298 (Avg: 0.9974 | Emo: 2.8965, Rec: 0.0222) | Emo Acc: 60.0%
+S2-DDP Epoch 1/1 | Step 950/2886 | Loss: 0.4278 (Avg: 1.1551 | Emo: 0.3943, Rec: 0.0224) | Emo Acc: 56.0%
+S2-DDP Epoch 1/1 | Step 975/2886 | Loss: 0.0629 (Avg: 0.9546 | Emo: 0.0314, Rec: 0.0210) | Emo Acc: 68.0%
+S2-DDP Epoch 1/1 | Step 1000/2886 | Loss: 1.9088 (Avg: 0.8800 | Emo: 1.8818, Rec: 0.0179) | Emo Acc: 74.0%
+S2-DDP Epoch 1/1 | Step 1025/2886 | Loss: 0.0405 (Avg: 1.0009 | Emo: 0.0006, Rec: 0.0266) | Emo Acc: 66.0%
+S2-DDP Epoch 1/1 | Step 1050/2886 | Loss: 4.5300 (Avg: 1.0851 | Emo: 4.4961, Rec: 0.0226) | Emo Acc: 62.0%
+S2-DDP Epoch 1/1 | Step 1075/2886 | Loss: 1.0855 (Avg: 1.1056 | Emo: 1.0586, Rec: 0.0179) | Emo Acc: 64.0%
+S2-DDP Epoch 1/1 | Step 1100/2886 | Loss: 0.0788 (Avg: 0.9466 | Emo: 0.0437, Rec: 0.0234) | Emo Acc: 68.0%
+S2-DDP Epoch 1/1 | Step 1125/2886 | Loss: 0.7669 (Avg: 0.8662 | Emo: 0.7397, Rec: 0.0181) | Emo Acc: 64.0%
+S2-DDP Epoch 1/1 | Step 1150/2886 | Loss: 0.0439 (Avg: 1.0353 | Emo: 0.0126, Rec: 0.0209) | Emo Acc: 56.0%
+S2-DDP Epoch 1/1 | Step 1175/2886 | Loss: 1.0093 (Avg: 0.9332 | Emo: 0.9795, Rec: 0.0199) | Emo Acc: 64.0%
+S2-DDP Epoch 1/1 | Step 1200/2886 | Loss: 0.1541 (Avg: 0.8242 | Emo: 0.1257, Rec: 0.0189) | Emo Acc: 70.0%
+S2-DDP Epoch 1/1 | Step 1225/2886 | Loss: 2.4863 (Avg: 0.9418 | Emo: 2.4590, Rec: 0.0182) | Emo Acc: 60.0%
+S2-DDP Epoch 1/1 | Step 1250/2886 | Loss: 1.1219 (Avg: 1.0913 | Emo: 1.0889, Rec: 0.0220) | Emo Acc: 52.0%
+S2-DDP Epoch 1/1 | Step 1275/2886 | Loss: 1.9309 (Avg: 1.0303 | Emo: 1.8984, Rec: 0.0217) | Emo Acc: 60.0%
+S2-DDP Epoch 1/1 | Step 1300/2886 | Loss: 0.7124 (Avg: 0.8289 | Emo: 0.6826, Rec: 0.0198) | Emo Acc: 74.0%
+S2-DDP Epoch 1/1 | Step 1325/2886 | Loss: 0.6060 (Avg: 0.8684 | Emo: 0.5732, Rec: 0.0218) | Emo Acc: 76.0%
+S2-DDP Epoch 1/1 | Step 1350/2886 | Loss: 3.7056 (Avg: 1.1131 | Emo: 3.6680, Rec: 0.0251) | Emo Acc: 68.0%
+S2-DDP Epoch 1/1 | Step 1375/2886 | Loss: 1.3470 (Avg: 1.2559 | Emo: 1.3154, Rec: 0.0210) | Emo Acc: 58.0%
+S2-DDP Epoch 1/1 | Step 1400/2886 | Loss: 0.4350 (Avg: 1.0440 | Emo: 0.4087, Rec: 0.0175) | Emo Acc: 64.0%
+S2-DDP Epoch 1/1 | Step 1425/2886 | Loss: 0.9436 (Avg: 0.9616 | Emo: 0.9126, Rec: 0.0207) | Emo Acc: 66.0%
+S2-DDP Epoch 1/1 | Step 1450/2886 | Loss: 0.4399 (Avg: 0.8522 | Emo: 0.4102, Rec: 0.0198) | Emo Acc: 66.0%
+S2-DDP Epoch 1/1 | Step 1475/2886 | Loss: 1.1652 (Avg: 0.6322 | Emo: 1.1406, Rec: 0.0164) | Emo Acc: 78.0%
+S2-DDP Epoch 1/1 | Step 1500/2886 | Loss: 0.4615 (Avg: 0.9810 | Emo: 0.4319, Rec: 0.0198) | Emo Acc: 64.0%
+S2-DDP Epoch 1/1 | Step 1525/2886 | Loss: 0.0276 (Avg: 1.1768 | Emo: 0.0005, Rec: 0.0181) | Emo Acc: 58.0%
+S2-DDP Epoch 1/1 | Step 1550/2886 | Loss: 0.5521 (Avg: 0.8499 | Emo: 0.5308, Rec: 0.0142) | Emo Acc: 70.0%
+S2-DDP Epoch 1/1 | Step 1575/2886 | Loss: 0.1771 (Avg: 0.6313 | Emo: 0.1473, Rec: 0.0198) | Emo Acc: 76.0%
+S2-DDP Epoch 1/1 | Step 1600/2886 | Loss: 1.6850 (Avg: 0.7647 | Emo: 1.6592, Rec: 0.0172) | Emo Acc: 74.0%
+S2-DDP Epoch 1/1 | Step 1625/2886 | Loss: 0.4889 (Avg: 0.9243 | Emo: 0.4602, Rec: 0.0191) | Emo Acc: 72.0%
+S2-DDP Epoch 1/1 | Step 1650/2886 | Loss: 0.1115 (Avg: 0.7699 | Emo: 0.0853, Rec: 0.0174) | Emo Acc: 80.0%
+S2-DDP Epoch 1/1 | Step 1675/2886 | Loss: 0.0321 (Avg: 0.6903 | Emo: 0.0019, Rec: 0.0201) | Emo Acc: 76.0%
+S2-DDP Epoch 1/1 | Step 1700/2886 | Loss: 0.6718 (Avg: 0.6197 | Emo: 0.6387, Rec: 0.0221) | Emo Acc: 78.0%
+S2-DDP Epoch 1/1 | Step 1725/2886 | Loss: 0.0648 (Avg: 0.7358 | Emo: 0.0274, Rec: 0.0249) | Emo Acc: 76.0%
+S2-DDP Epoch 1/1 | Step 1750/2886 | Loss: 1.3950 (Avg: 1.0026 | Emo: 1.3643, Rec: 0.0205) | Emo Acc: 62.0%
+S2-DDP Epoch 1/1 | Step 1775/2886 | Loss: 0.1491 (Avg: 0.9050 | Emo: 0.1224, Rec: 0.0178) | Emo Acc: 64.0%
+S2-DDP Epoch 1/1 | Step 1800/2886 | Loss: 1.8337 (Avg: 0.7778 | Emo: 1.8105, Rec: 0.0155) | Emo Acc: 74.0%
+S2-DDP Epoch 1/1 | Step 1825/2886 | Loss: 1.0521 (Avg: 0.8310 | Emo: 1.0225, Rec: 0.0197) | Emo Acc: 74.0%
+S2-DDP Epoch 1/1 | Step 1850/2886 | Loss: 2.0596 (Avg: 0.9174 | Emo: 2.0352, Rec: 0.0163) | Emo Acc: 66.0%
+S2-DDP Epoch 1/1 | Step 1875/2886 | Loss: 0.1154 (Avg: 0.9150 | Emo: 0.0879, Rec: 0.0183) | Emo Acc: 64.0%
+S2-DDP Epoch 1/1 | Step 1900/2886 | Loss: 0.3095 (Avg: 0.7878 | Emo: 0.2749, Rec: 0.0231) | Emo Acc: 70.0%
+S2-DDP Epoch 1/1 | Step 1925/2886 | Loss: 0.7406 (Avg: 0.7495 | Emo: 0.7124, Rec: 0.0188) | Emo Acc: 74.0%
+S2-DDP Epoch 1/1 | Step 1950/2886 | Loss: 1.0857 (Avg: 0.8363 | Emo: 1.0537, Rec: 0.0213) | Emo Acc: 70.0%
+S2-DDP Epoch 1/1 | Step 1975/2886 | Loss: 0.4698 (Avg: 0.8320 | Emo: 0.4341, Rec: 0.0238) | Emo Acc: 68.0%
+S2-DDP Epoch 1/1 | Step 2000/2886 | Loss: 0.1095 (Avg: 0.8120 | Emo: 0.0750, Rec: 0.0230) | Emo Acc: 68.0%
+S2-DDP Epoch 1/1 | Step 2025/2886 | Loss: 1.7069 (Avg: 0.8770 | Emo: 1.6758, Rec: 0.0207) | Emo Acc: 66.0%
+S2-DDP Epoch 1/1 | Step 2050/2886 | Loss: 0.4979 (Avg: 0.8010 | Emo: 0.4714, Rec: 0.0176) | Emo Acc: 72.0%
+S2-DDP Epoch 1/1 | Step 2075/2886 | Loss: 0.0428 (Avg: 0.9141 | Emo: 0.0047, Rec: 0.0254) | Emo Acc: 68.0%
+S2-DDP Epoch 1/1 | Step 2100/2886 | Loss: 0.3060 (Avg: 0.9869 | Emo: 0.2734, Rec: 0.0217) | Emo Acc: 64.0%
+S2-DDP Epoch 1/1 | Step 2125/2886 | Loss: 0.9175 (Avg: 0.8746 | Emo: 0.8877, Rec: 0.0199) | Emo Acc: 70.0%
+S2-DDP Epoch 1/1 | Step 2150/2886 | Loss: 1.4475 (Avg: 0.9180 | Emo: 1.4170, Rec: 0.0203) | Emo Acc: 68.0%
+S2-DDP Epoch 1/1 | Step 2175/2886 | Loss: 1.3156 (Avg: 0.8792 | Emo: 1.2832, Rec: 0.0216) | Emo Acc: 64.0%
+S2-DDP Epoch 1/1 | Step 2200/2886 | Loss: 0.0386 (Avg: 0.8940 | Emo: 0.0043, Rec: 0.0229) | Emo Acc: 64.0%
+S2-DDP Epoch 1/1 | Step 2225/2886 | Loss: 0.0345 (Avg: 0.9029 | Emo: 0.0063, Rec: 0.0188) | Emo Acc: 68.0%
+S2-DDP Epoch 1/1 | Step 2250/2886 | Loss: 1.7519 (Avg: 0.7946 | Emo: 1.7227, Rec: 0.0195) | Emo Acc: 68.0%
+S2-DDP Epoch 1/1 | Step 2275/2886 | Loss: 0.0511 (Avg: 0.8614 | Emo: 0.0211, Rec: 0.0200) | Emo Acc: 62.0%
+S2-DDP Epoch 1/1 | Step 2300/2886 | Loss: 0.2189 (Avg: 0.7752 | Emo: 0.1835, Rec: 0.0236) | Emo Acc: 66.0%
+S2-DDP Epoch 1/1 | Step 2325/2886 | Loss: 0.0530 (Avg: 0.8084 | Emo: 0.0149, Rec: 0.0254) | Emo Acc: 70.0%
+S2-DDP Epoch 1/1 | Step 2350/2886 | Loss: 0.8860 (Avg: 1.0381 | Emo: 0.8511, Rec: 0.0233) | Emo Acc: 70.0%
+S2-DDP Epoch 1/1 | Step 2375/2886 | Loss: 0.7720 (Avg: 0.8739 | Emo: 0.7476, Rec: 0.0163) | Emo Acc: 76.0%
+S2-DDP Epoch 1/1 | Step 2400/2886 | Loss: 0.2919 (Avg: 0.8133 | Emo: 0.2668, Rec: 0.0167) | Emo Acc: 70.0%
+S2-DDP Epoch 1/1 | Step 2425/2886 | Loss: 1.5665 (Avg: 0.9809 | Emo: 1.5342, Rec: 0.0215) | Emo Acc: 66.0%
+S2-DDP Epoch 1/1 | Step 2450/2886 | Loss: 1.6921 (Avg: 1.2635 | Emo: 1.6582, Rec: 0.0226) | Emo Acc: 56.0%
+S2-DDP Epoch 1/1 | Step 2475/2886 | Loss: 1.3435 (Avg: 1.1367 | Emo: 1.3164, Rec: 0.0181) | Emo Acc: 56.0%
+S2-DDP Epoch 1/1 | Step 2500/2886 | Loss: 2.6923 (Avg: 0.7761 | Emo: 2.6543, Rec: 0.0254) | Emo Acc: 70.0%
+S2-DDP Epoch 1/1 | Step 2525/2886 | Loss: 1.0571 (Avg: 0.8116 | Emo: 1.0254, Rec: 0.0211) | Emo Acc: 66.0%
+S2-DDP Epoch 1/1 | Step 2550/2886 | Loss: 0.5721 (Avg: 0.7327 | Emo: 0.5420, Rec: 0.0201) | Emo Acc: 72.0%
+S2-DDP Epoch 1/1 | Step 2575/2886 | Loss: 0.0577 (Avg: 0.7280 | Emo: 0.0226, Rec: 0.0234) | Emo Acc: 74.0%
+S2-DDP Epoch 1/1 | Step 2600/2886 | Loss: 1.2011 (Avg: 0.9105 | Emo: 1.1768, Rec: 0.0162) | Emo Acc: 68.0%
+S2-DDP Epoch 1/1 | Step 2625/2886 | Loss: 1.7700 (Avg: 1.0107 | Emo: 1.7451, Rec: 0.0166) | Emo Acc: 62.0%
+S2-DDP Epoch 1/1 | Step 2650/2886 | Loss: 0.1274 (Avg: 1.0451 | Emo: 0.0974, Rec: 0.0201) | Emo Acc: 56.0%
+S2-DDP Epoch 1/1 | Step 2675/2886 | Loss: 0.6497 (Avg: 1.0499 | Emo: 0.6221, Rec: 0.0184) | Emo Acc: 60.0%
+S2-DDP Epoch 1/1 | Step 2700/2886 | Loss: 2.0471 (Avg: 0.9781 | Emo: 2.0195, Rec: 0.0184) | Emo Acc: 64.0%
+S2-DDP Epoch 1/1 | Step 2725/2886 | Loss: 0.3264 (Avg: 0.9966 | Emo: 0.2983, Rec: 0.0187) | Emo Acc: 60.0%
+S2-DDP Epoch 1/1 | Step 2750/2886 | Loss: 0.5381 (Avg: 1.1018 | Emo: 0.5049, Rec: 0.0221) | Emo Acc: 56.0%
+S2-DDP Epoch 1/1 | Step 2775/2886 | Loss: 0.0402 (Avg: 0.9887 | Emo: 0.0081, Rec: 0.0214) | Emo Acc: 64.0%
+S2-DDP Epoch 1/1 | Step 2800/2886 | Loss: 0.1368 (Avg: 0.8062 | Emo: 0.1028, Rec: 0.0227) | Emo Acc: 68.0%
+S2-DDP Epoch 1/1 | Step 2825/2886 | Loss: 3.8828 (Avg: 1.0035 | Emo: 3.8555, Rec: 0.0182) | Emo Acc: 60.0%
+S2-DDP Epoch 1/1 | Step 2850/2886 | Loss: 0.0807 (Avg: 1.0194 | Emo: 0.0432, Rec: 0.0250) | Emo Acc: 66.0%
+S2-DDP Epoch 1/1 | Step 2875/2886 | Loss: 0.7146 (Avg: 0.9207 | Emo: 0.6860, Rec: 0.0190) | Emo Acc: 62.0%
+/home/ankit.dhurve/ppfer-main (2)/ppfer-main/.venv/lib/python3.11/site-packages/torch/utils/checkpoint.py:87: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+/home/ankit.dhurve/ppfer-main (2)/ppfer-main/.venv/lib/python3.11/site-packages/torch/utils/checkpoint.py:87: UserWarning: None of the inputs have requires_grad=True. Gradients will be None
+  warnings.warn(
+S2-DDP Epoch 1/1 SUMMARY | Train Loss: 0.9182 (Acc: 65.44%) | Val Loss: 0.9454 (Acc: 63.25%)
+
+=== Exporting Stage-2 Compensated Clips on 2 GPUs in Parallel ===
+Exported ~2/7401 clips to /home/ankit.dhurve/datasets/CREMA-D/s3_clips
+Exported ~502/7401 clips to /home/ankit.dhurve/datasets/CREMA-D/s3_clips
+Exported ~1002/7401 clips to /home/ankit.dhurve/datasets/CREMA-D/s3_clips
+Exported ~1502/7401 clips to /home/ankit.dhurve/datasets/CREMA-D/s3_clips
+Exported ~2002/7401 clips to /home/ankit.dhurve/datasets/CREMA-D/s3_clips
+Exported ~2502/7401 clips to /home/ankit.dhurve/datasets/CREMA-D/s3_clips
+Exported ~3002/7401 clips to /home/ankit.dhurve/datasets/CREMA-D/s3_clips
+Exported ~3502/7401 clips to /home/ankit.dhurve/datasets/CREMA-D/s3_clips
+Exported ~4002/7401 clips to /home/ankit.dhurve/datasets/CREMA-D/s3_clips
+Exported ~4502/7401 clips to /home/ankit.dhurve/datasets/CREMA-D/s3_clips
+Exported ~5002/7401 clips to /home/ankit.dhurve/datasets/CREMA-D/s3_clips
+Exported ~5502/7401 clips to /home/ankit.dhurve/datasets/CREMA-D/s3_clips
+Exported ~6002/7401 clips to /home/ankit.dhurve/datasets/CREMA-D/s3_clips
+Exported ~6502/7401 clips to /home/ankit.dhurve/datasets/CREMA-D/s3_clips
+Exported ~7002/7401 clips to /home/ankit.dhurve/datasets/CREMA-D/s3_clips
+Exported ~7401/7401 clips to /home/ankit.dhurve/datasets/CREMA-D/s3_clips
+Stage 2 Training & Stage-3 Clip Export 100% Completed!
